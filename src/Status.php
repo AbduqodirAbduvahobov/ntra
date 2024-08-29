@@ -16,9 +16,10 @@ class Status
 
     public function createStatus(string $name): false|string
     {
-        $stmt = $this->pdo->prepare("INSERT INTO status (`name`) VALUES (:name)");
+        $stmt = $this->pdo->prepare("INSERT INTO `status` (`name`) VALUES (:name)");
         $stmt->bindParam(':name', $name);
         $stmt->execute();
+
         return $this->pdo->lastInsertId();
     }
 

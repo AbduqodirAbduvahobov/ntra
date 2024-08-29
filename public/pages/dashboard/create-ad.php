@@ -204,14 +204,6 @@ loadPartials('navbar');
                             <div class="rounded-md shadow dark:shadow-gray-700 p-6 bg-white dark:bg-slate-900 h-fit">
                                 <form id="ads-create" action="/ads/create" method="post" enctype="multipart/form-data">
                                     <div class="grid grid-cols-12 gap-5">
-
-                                        <select name ="branch_id">
-                                            <?php
-                                                foreach ($branches as $branch):
-                                                    echo "<option value='$branch->id'>$branch->name</option>";
-                                                endforeach;
-                                            ?>
-                                        </select>
                                         <div class="col-span-12">
                                             <label for="title" class="font-medium">Sarlavha</label>
                                             <input name="title" id="title" type="text" class="form-input mt-2" placeholder="Ads Title :">
