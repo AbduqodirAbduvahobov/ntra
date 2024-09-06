@@ -46,4 +46,8 @@ class Branch
         $stmt->bindParam(':id', $id);
         return $stmt->execute();
     }
+
+    public function getBranches()
+    {
+    }
 }

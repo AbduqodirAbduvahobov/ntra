@@ -2,15 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Controller;
+namespace Controllers;
 
-use App\Ads;
+use App\Auth;
 
-class UserController
+class AuthController
 {
-    public function loadProfile(): void
+
+    public function login(): void
     {
-        $ads = (new Ads())->getUsersAds($_SESSION['user']['id']);
-        loadView('profile', ['ads' => $ads], false);
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        (new Auth())->login($username, $password);
     }
+
 }

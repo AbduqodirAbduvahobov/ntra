@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
-loadPartials('header'); ?>
+loadPartials('header');
+
+//dd($_SESSION);
+?>
 
 <body class="dark:bg-slate-900">
 <!-- Loader Start -->

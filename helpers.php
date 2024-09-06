@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Ads;
+use JetBrains\PhpStorm\NoReturn;
 
 function dd($args)
 {
@@ -66,7 +67,7 @@ function loadController(string $path, array|null $args = null): void
     require basePath('/controllers/'.$path.'.php');
 }
 
-function redirect(string $url): void
+#[NoReturn] function redirect(string $url): void
 {
     header("Location: $url");
     exit();

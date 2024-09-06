@@ -3,6 +3,7 @@
   <component name="SqlDialectMappings">
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/fde0b12f-9486-4016-ab8f-fc794eb9fce0/console.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/Ads.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/Auth.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/src/Branch.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/src/Status.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/src/User.php" dialect="GenericSQL" />
